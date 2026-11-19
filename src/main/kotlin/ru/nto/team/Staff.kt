@@ -12,7 +12,7 @@ import jakarta.persistence.Table
 class Staff(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long?,
+    var id: Long = 0,
 
     @Column(nullable = false, unique = true)
     var code: String,
